@@ -1,26 +1,3 @@
-// const express = require("express");
-// const { register, login } = require("../controllers/authController.js");
-
-// const router = express.Router();
-// const blacklist = new Set(); // Store blacklisted tokens (temporary in-memory)
-
-// router.post("/register", register);
-// router.post("/login", login);
-// router.post("/logout", (req, res) => {
-//   const token = req.headers.authorization?.split(" ")[1];
-//   if (!token) {
-//     return res.status(400).json({ message: "No token provided" });
-//   }
-//   blacklist.add(token);
-//   res.json({ message: "Logged out successfully" });
-// });
-
-// module.exports = router; // ✅ Only export `router`
-// module.exports.blacklist = blacklist; // ✅ Export blacklist separately
-
-
-
-
 const express = require("express");
 const { register, login } = require("../controllers/authController.js");
 
